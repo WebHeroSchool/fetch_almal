@@ -12,7 +12,7 @@ let getUsername = (url) => {
 let name = getUsername(url);
 
 fetch('https://api.github.com/users/' + name)
-    .then(result => result.json())
+    .then(result => result.json());
     .then(json => {
       const body = document.body;
 
